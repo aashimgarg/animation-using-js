@@ -2,7 +2,7 @@
 
 
 
-> The code of animation is written in **JavaScript** language .
+> The code of this animation is written in **JavaScript** language .
 
 
 ## Language
