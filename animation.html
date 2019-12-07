@@ -17,6 +17,12 @@ canvas{
 <link rel="stylesheet" type="text/css" href="animation.css">
 <script type="text/paperscript" canvas="myCanvas">
 var rectangles =[] ;
+<!-- var map = {};
+onkeydown = onkeyup = function(e){
+    e = e || event; // to deal with IE
+    map[e.keyCode] = e.type == 'keydown';
+    /* insert conditional here */
+} -->
 function onKeyDown(event) {
 var maxPoint = new Point(view.size.width , view.size.height)
 var randomPoint = Point.random();
@@ -179,12 +185,14 @@ else if (event.key ==="m")
 }
 rectangles.push(newRectangle);
 }
-function onFrame(event){
+view.onFrame = function(event){
 	for (var i=0 ; i< rectangles.length ; i++){
 		rectangles[i].fillColor.hue+=1;
-		rectangles[i].scale(.9 );
+		rectangles[i].scale(0.9);	
+		rectangles[i].rotate(0.05);
 	}
 }
+paper.view.draw();
 </script>
 </head>
 <body>
