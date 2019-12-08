@@ -11,18 +11,11 @@ canvas{
     height:100%;
 }
 </style>
-
-<script type="text/javascript" src="paper-full.js"></script>
+<script type="text/javascript" src="paperjs-v0.12.3/dist/paper-full.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.core.min.js"></script>
 <link rel="stylesheet" type="text/css" href="animation.css">
 <script type="text/paperscript" canvas="myCanvas">
-var rectangles =[] ;
-<!-- var map = {};
-onkeydown = onkeyup = function(e){
-    e = e || event; // to deal with IE
-    map[e.keyCode] = e.type == 'keydown';
-    /* insert conditional here */
-} -->
+var rectangles = [];
 function onKeyDown(event) {
 var maxPoint = new Point(view.size.width , view.size.height)
 var randomPoint = Point.random();
@@ -31,163 +24,193 @@ var newRectangle = new Path.Rectangle(point,300);
 if (event.key ==="q")
 {	
 	var sound = new Howl({
-		src: ['bubbles.mp3']});	sound.play();
-	newRectangle.fillColor = "orange"
+		src: ['sounds/bubbles.mp3']});	sound.play();
+	newRectangle.fillColor = "orange";
+	rectangles.push(newRectangle);
 }
 else if (event.key ==="w")
 {	
 	var sound = new Howl({
 		src: ['sounds/clay.mp3']});	sound.play();
-		newRectangle.fillColor = "purple"
+		newRectangle.fillColor = "purple";
+		rectangles.push(newRectangle);
+
 }
 else if (event.key ==="e")
 {	
 	var sound = new Howl({
 		src: ['sounds/confetti.mp3']});	sound.play();
-		newRectangle.fillColor = "pink"
+		newRectangle.fillColor = "pink";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="r")
 {	
 	var sound = new Howl({
 		src: ['sounds/corona.mp3']});	sound.play();
-		newRectangle.fillColor = "black"
+		newRectangle.fillColor = "black";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="t")
 {	
 	var sound = new Howl({
 		src: ['sounds/dotted-spiral.mp3']});	sound.play();
-		newRectangle.fillColor = "blue"
+		newRectangle.fillColor = "blue";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="y")
 {	
 	var sound = new Howl({
 		src: ['sounds/flash-1.mp3']});	sound.play();
-		newRectangle.fillColor = "powderblue"
+		newRectangle.fillColor = "powderblue";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="u")
 {	
 	var sound = new Howl({
 		src: ['sounds/flash-2.mp3']});	sound.play();
-		newRectangle.fillColor = "orange"
+		newRectangle.fillColor = "orange";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="i")
 {	
 	var sound = new Howl({
 		src: ['sounds/flash-3.mp3']});	sound.play();
-		newRectangle.fillColor = "green"
+		newRectangle.fillColor = "green";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="o")
 {	
 	var sound = new Howl({
 		src: ['sounds/glimmer.mp3']});	sound.play();
-		newRectanglefillColor = "cyan"
+		newRectangle.fillColor = "cyan";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="p")
 {	
 	var sound = new Howl({
 		src: ['sounds/moon.mp3']});	sound.play();
-		newRectangle.fillColor = "indigo"
+		newRectangle.fillColor = "indigo";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="a")
 {	
 	var sound = new Howl({
 		src: ['sounds/pinwheel.mp3']});	sound.play();
-		newRectangle.fillColor = "yellow"
+		newRectangle.fillColor = "yellow";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="s")
 {	
 	var sound = new Howl({
 		src: ['sounds/piston-1.mp3']});	sound.play();
-		newRectangle.fillColor = "azure"
+		newRectangle.fillColor = "azure";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="d")
 {	
 	var sound = new Howl({
 		src: ['sounds/piston-2.mp3']});	sound.play();
-		newRectangle.fillColor = "brown"
+		newRectangle.fillColor = "brown";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="f")
 {	
 	var sound = new Howl({
 		src: ['sounds/piston-3.mp3']});	sound.play();
-		newRectangle.fillColor = "red"
+		newRectangle.fillColor = "red";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="g")
 {	
 	var sound = new Howl({
 		src: ['sounds/prism-1.mp3']});	sound.play();
-		newRectangle.fillColor = "tan"
+		newRectangle.fillColor = "tan";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="h")
 {	
 	var sound = new Howl({
 		src: ['sounds/prism-2.mp3']});	sound.play();
-		newRectangle.fillColor = "black"
+		newRectangle.fillColor = "black";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="j")
 {	
 	var sound = new Howl({
 		src: ['sounds/prism-3.mp3']});	sound.play();
-		newRectangle.fillColor = "violet"
+		newRectangle.fillColor = "violet";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="k")
 {	
 	var sound = new Howl({
 		src: ['sounds/splits.mp3']});	sound.play();
-		newRectangle.fillColor = "pink"
+		newRectangle.fillColor = "pink";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="l")
 {	
 	var sound = new Howl({
 		src: ['sounds/squiggle.mp3']});	sound.play();
-		newRectangle.fillColor = "green yellow"
+		newRectangle.fillColor = "green yellow";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="z")
 {	
 	var sound = new Howl({
 		src: ['sounds/strike.mp3']});	sound.play();
-		newRectangle.fillColor = "red orange"
+		newRectangle.fillColor = "red orange";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="x")
 {	
 	var sound = new Howl({
 		src: ['sounds/suspension.mp3']});	sound.play();
-		newRectangle.fillColor = "powderblue"
-}else if (event.key ==="c")
+		newRectangle.fillColor = "powderblue";
+		rectangles.push(newRectangle);
+}
+else if (event.key ==="c")
 {	
 	var sound = new Howl({
 		src: ['sounds/timer.mp3']});	sound.play();
-		newRectangle.fillColor = "blue"
+		newRectangle.fillColor = "blue";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="v")
 {	
 	var sound = new Howl({
 		src: ['sounds/ufo.mp3']});	sound.play();
-		newRectangle.fillColor = "orange"
+		newRectangle.fillColor = "orange";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="b")
 {	
 	var sound = new Howl({
 		src: ['sounds/veil.mp3']});	sound.play();
-		newRectangle.fillColor = "pink"
+		newRectangle.fillColor = "pink";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="n")
 {	
 	var sound = new Howl({
 		src: ['sounds/wipe.mp3']});	sound.play();
-		newRectangle.fillColor = "purple"
+		newRectangle.fillColor = "purple";
+		rectangles.push(newRectangle);
 }
 else if (event.key ==="m")
 {	
 	var sound = new Howl({
 		src: ['sounds/zig-zag.mp3']});	sound.play();
-		newRectangle.fillColor = "teal"
+		newRectangle.fillColor = "teal";
+		rectangles.push(newRectangle);
 }
-rectangles.push(newRectangle);
+else{
+	return;
+}
 }
 view.onFrame = function(event){
 	for (var i=0 ; i< rectangles.length ; i++){
-		rectangles[i].fillColor.hue+=1;
+		rectangles[i].fillColor.hue = (rectangles[i].fillColor.hue + 1) % 360;
 		rectangles[i].scale(0.9);	
 		rectangles[i].rotate(0.05);
 	}
