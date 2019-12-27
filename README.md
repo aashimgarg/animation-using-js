@@ -15,9 +15,9 @@
 -   Use slack for communication 
 
  https://join.slack.com/t/no-brainers/shared_invite/enQtODQwODA2MDA4NzU5LWZhMTdiM2UyOWYxNDUzZjlkNDBlY2E3NjExMjEzY2ZkMDBhNGM4MjlhNjM0Nzg2NGIyNjJlMWYyMjEwMmU0MmI
--   If you  **found a bug**, simply open an issue.
--   If you  **have a feature request**, open an issue.
--   If you  **want to contribute**, submit a pull request and if i like it i will merge it.
+-   If you  **found a bug**, simply open a [new-issue](https://github.com/aashimgarg/animation-using-js/issues/new).
+-   If you  **have a feature request**, open a [new-issue](https://github.com/aashimgarg/animation-using-js/issues/new).
+-   If you  **want to contribute**, submit a pull request and if i like it then i will merge it.
 
 
 ## Getting Started
