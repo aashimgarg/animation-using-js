@@ -12,7 +12,7 @@ canvas{
 }
 </style>
 
-<script type="text/javascript" src="paper-full.js"></script>
+<script type="text/javascript" src="paperjs-v0.12.3/dist/paper-full.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.core.min.js"></script>
 <link rel="stylesheet" type="text/css" href="animation.css">
 <script type="text/paperscript" canvas="myCanvas">
@@ -25,7 +25,7 @@ var newRectangle = new Path.Rectangle(point,300);
 if (event.key ==="q")
 {	
 	var sound = new Howl({
-		src: ['bubbles.mp3']});	sound.play();
+		src: ['sounds/bubbles.mp3']});	sound.play();
 	newRectangle.fillColor = "orange"
 }
 else if (event.key ==="w")
@@ -74,7 +74,7 @@ else if (event.key ==="o")
 {	
 	var sound = new Howl({
 		src: ['sounds/glimmer.mp3']});	sound.play();
-		newRectanglefillColor = "cyan"
+		newRectangle.fillColor = "cyan"
 }
 else if (event.key ==="p")
 {	
