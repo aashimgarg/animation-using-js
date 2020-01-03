@@ -15,7 +15,7 @@
 
 -   If you  **found a bug**, simply open an issue.
 -   If you  **have a feature request**, open an issue.
--   If you  **want to contribute**, submit a pull request and if i like it i will merge it.
+-   If you  **want to contribute**, submit a pull request and if it is working i will merge it.
 
 
 ## Getting Started
