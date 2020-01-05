@@ -27,7 +27,7 @@ Run  https://github.com/aashimgarg/animation-using-js.git
 
 ## Contributors on GitHub
 
-Feel fee to make a pull request. There is so much to improve on and learn more.
+Feel free to make a pull request. There is so much to improve on and learn more.
 
 ### Developer
 -   e-mail :  [aashim1garg@gmail.com](mailto:aashim1garg@gmail.com)
