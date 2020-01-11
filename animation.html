@@ -185,6 +185,20 @@ function onFrame(event){
 		rectangles[i].scale(.9 );
 	}
 }
+function randomcolor()
+{
+    var color = "#";
+    for (var i = 0; i < 6; i++) {
+        color += (Math.random() * 16 | 0).toString(16);
+    }
+        document.body.style.backgroundColor = color;
+}
+
+window.addEventListener('keydown', function(e) {
+    if (e.keyCode == 32) {
+        randomcolor()
+    }
+}); 
 </script>
 </head>
 <body>
