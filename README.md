@@ -2,7 +2,7 @@
 
 
 
-> The major part of the code of this animation is written in **JavaScript** language .
+> The major part of the code of this animation is written in **JavaScript**, **HTML** language .
 
 
 ## Language
