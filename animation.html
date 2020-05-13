@@ -22,6 +22,14 @@ var maxPoint = new Point(view.size.width , view.size.height)
 var randomPoint = Point.random();
 var point = randomPoint *  maxPoint ;
 var newRectangle = new Path.Rectangle(point,300);
+if(event.key === "spacebar" || event.key === " " || event.keyCode == 32)
+{
+	var x = Math.floor(Math.random() * 256);
+	var y = Math.floor(Math.random() * 256);
+	var z = Math.floor(Math.random() * 256);
+	var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+	document.body.style.background = bgColor;
+}
 if (event.key ==="q")
 {	
 	var sound = new Howl({
